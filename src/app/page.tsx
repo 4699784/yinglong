@@ -17,20 +17,20 @@ export default function HomePage() {
           山鬼与楚辞研究语料库
         </h1>
         <p className="animate-rise-delay mt-3 max-w-lg text-sm leading-7 text-ink/75 md:text-[0.95rem]">
-          汇集先秦楚史语境、荆楚巫祭风俗、屈原生平经历，以及《离骚》《九歌》全文；《山鬼》含翻译、解析与鉴赏。
+          先秦、荆楚、屈原、《离骚》《九歌》均含背景、翻译、解析与鉴赏；《山鬼》专卷最深。
         </p>
         <div className="animate-rise-delay mt-8 flex flex-wrap gap-4">
           <Link
-            href="/read/楚辞/山鬼/00-细读指南"
+            href="/read/总览-细读地图"
             className="rounded-sm bg-jade/90 px-5 py-2.5 text-sm tracking-wide text-pine-ink transition hover:bg-foam"
           >
-            细读《山鬼》
+            打开细读地图
           </Link>
           <Link
-            href="/read/先秦/概述"
+            href="/read/楚辞/山鬼/00-细读指南"
             className="rounded-sm border border-mist/60 px-5 py-2.5 text-sm tracking-wide text-foam/90 transition hover:border-jade hover:text-foam"
           >
-            从先秦语境开始
+            先读《山鬼》
           </Link>
         </div>
         <ul className="animate-rise-delay mt-12 grid gap-3 text-sm text-ink/65 sm:grid-cols-3">

@@ -19,14 +19,14 @@ export function SiteHeader({ compact = false }: { compact?: boolean }) {
         <Link href="/read/楚辞/山鬼/00-细读指南" className="transition hover:text-foam">
           山鬼
         </Link>
-        <Link href="/read/楚辞/概述" className="transition hover:text-foam">
-          楚辞
+        <Link href="/read/楚辞/九歌/00-细读指南" className="transition hover:text-foam">
+          九歌
         </Link>
         <Link
-          href="/read/先秦/概述"
+          href="/read/总览-细读地图"
           className="rounded-sm border border-jade/40 px-3 py-1.5 text-jade transition hover:border-jade hover:bg-moss/50 hover:text-foam"
         >
-          进入语料
+          细读地图
         </Link>
       </nav>
     </header>
