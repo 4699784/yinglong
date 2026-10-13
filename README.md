@@ -20,10 +20,15 @@ npm run dev -- -p 4327 -H 127.0.0.1
 
 ### Vercel
 
+已认领生产站示例：`https://speedy-sequoia-djgh1cn.vercel.app`（认领后需登录账号或提供 `VERCEL_TOKEN` 才能继续推送）。
+
 ```bash
 npx vercel login
+npx vercel link   # 选中已认领项目
 npx vercel --prod
 ```
+
+或把 `VERCEL_TOKEN` / `VERCEL_ORG_ID` / `VERCEL_PROJECT_ID` 配到 GitHub Secrets，推送 `main` 即走 `.github/workflows/vercel-deploy.yml`。
 
 匿名临时发布：`npx vercel deploy --yes --temporary`（需在时限内认领）。
 
