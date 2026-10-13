@@ -18,6 +18,34 @@ npm run build
 npm run start -- -p 4327
 ```
 
+## 发布
+
+### Vercel（推荐）
+
+```bash
+npx vercel login          # 首次
+npx vercel                # 预览
+npx vercel --prod         # 生产
+```
+
+未登录时可临时匿名发布（约 60 分钟有效，需在 Vercel 认领后保留）：
+
+```bash
+npx vercel deploy --yes --temporary
+```
+
+仓库已含 `vercel.json`。将 GitHub 仓库 `4699784/yinglong` 导入 [Vercel Dashboard](https://vercel.com/new) 并绑定后，推送 `main` 即可持续发布。
+
+### 容器 + 反向代理（可选）
+
+需本机 Docker：
+
+```bash
+docker compose up --build
+```
+
+浏览器打开 [http://127.0.0.1:8088](http://127.0.0.1:8088)（Caddy 代理到 Next.js）。
+
 ## 文字与体例
 
 - **古典正文**：统一使用**简体字**（据通行《楚辞》文本转写；个别异文在注文中说明）。

@@ -1,0 +1,17 @@
+# 本地/自托管：应用 + Caddy 反向代理容器
+services:
+  web:
+    build: .
+    expose:
+      - "4327"
+    restart: unless-stopped
+
+  proxy:
+    image: caddy:2-alpine
+    ports:
+      - "8088:80"
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+    depends_on:
+      - web
+    restart: unless-stopped
