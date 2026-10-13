@@ -16,7 +16,7 @@ export function SiteHeader({ compact = false }: { compact?: boolean }) {
         </span>
       </Link>
       <nav className="flex items-center gap-5 text-sm text-ink/70">
-        <Link href="/read/楚辞/山鬼/全文与解题" className="transition hover:text-foam">
+        <Link href="/read/楚辞/山鬼/00-细读指南" className="transition hover:text-foam">
           山鬼
         </Link>
         <Link href="/read/楚辞/概述" className="transition hover:text-foam">
